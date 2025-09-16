@@ -56,4 +56,17 @@ public class Personagem {
     public void setChakra(int chakra) {
         this.chakra = chakra;
     }
+    public void adicionarJutsu(String jutsu){
+        this.jutsus.add(jutsu);
+    }
+    public void aumentarChakra(int quantidade){
+        this.chakra += quantidade;
+    }
+    public void exibirInformacoes(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Aldeia: " + aldeia);
+        System.out.println("Chakra: " + chakra);
+        System.out.println("Jutsus: " + jutsus);
+    }
 }
